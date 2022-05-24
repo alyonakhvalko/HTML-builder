@@ -10,7 +10,8 @@ const dirPathCopy = path.resolve(__dirname, 'files-copy');
 fs.mkdir(dirPathCopy, { recursive: true }, err => {
     if(err) { throw err; // не удалось создать папки
 } else {
-    //console.log('Папка успешно создана');}
+    //console.log('Папка успешно создана');
+}
 });
 
         fs.readdir(dirPath, { withFileTypes: true }, (err, files) => { 
