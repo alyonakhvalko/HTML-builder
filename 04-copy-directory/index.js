@@ -12,11 +12,10 @@ fs.mkdir(dirPathCopy, { recursive: true }, err => {
 }
 });
 
-//читаем и удаляем содержимое(если есть)
 fs.readdir(dirPathCopy, { withFileTypes: true }, (err, files) => { 
     if(err) { throw err; 
     } else {
-    //console.log(files);
+    console.log(files);
 }});
 
 fs.readdir(dirPath, { withFileTypes: true }, (err, files) => { 
