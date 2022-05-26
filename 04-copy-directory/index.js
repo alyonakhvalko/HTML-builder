@@ -5,7 +5,7 @@ const dirPath = path.resolve(__dirname, 'files');
 const dirPathCopy = path.resolve(__dirname, 'files-copy');
 
 fs.rm(dirPathCopy, { recursive: true }, (err) => {
-    if(err) throw err;
+    /*if(err) throw err;*/
     fs.mkdir(dirPathCopy, (err) => {
     if(err) throw err;
     else {
